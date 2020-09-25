@@ -1,0 +1,273 @@
+/*body*/
+.mb-10 {
+    margin-bottom: 10px !important;
+}
+.checkbox {
+    position: relative;
+    margin-top: 10px;
+}
+.checkbox input[type="checkbox"] {
+    width: 150px;
+    opacity: 0;
+    position: absolute;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    margin: 0px;
+}
+.checkbox label::before {
+    content: "";
+    height: 25px;
+    width: 25px;
+    border: 2px solid #13aff0;
+    position: absolute;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #13aff0;
+    left: 0px;
+    top: 0px;
+}
+.checkbox label {
+    padding-left: 30px;
+    text-align: center;
+}
+.checkbox input[type="checkbox"]:checked + label::before {
+    background-color: #12aff0;
+    content:"\f00c";
+    font-family: "FontAwesome";
+    color: #fff;
+}
+#register-message {
+    background-color: #ffffff;
+    border: 1px solid #dedede;
+    color: #fff;
+    display: none;
+    margin: 0px 0px 20px;
+    padding: 10px;
+}
+p.error {
+    margin: 0px;
+    color: #a40000;
+}
+.mr-10 {
+    margin-right: 10px;
+}
+.mr-20 {
+    margin-right: 10px;
+}
+.mr-30 {
+    margin-right: 10px;
+}
+.ml-10 {
+    margin-left: 10px;
+}
+.ml-20 {
+    margin-left: 10px;
+}
+.ml-30 {
+    margin-left: 10px;
+}
+.mt-10 {
+    margin-top: 10px;
+}
+.mt-20 {
+    margin-top: 10px;
+}
+.mt-30 {
+    margin-top: 10px;
+}
+.mb-10 {
+    margin-bottom: 10px;
+}
+.mb-20 {
+    margin-bottom: 20px;
+}
+.mb-30 {
+    margin-bottom: 30px;
+}
+.registration-form .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px -10px;
+}
+.col-md-10 {
+    flex: 0 0 10%;
+    padding: 0px 10px;
+}
+.col-md-20 {
+    flex: 0 0 20%;
+    padding: 0px 10px;
+}
+.col-md-25 {
+    flex: 0 0 25%;
+    padding: 0px 10px;
+}
+.col-md-33 {
+    flex: 0 0 33.3%;
+    padding: 0px 10px;
+}
+.col-md-50 {
+    flex: 0 0 50%;
+    padding: 0px 10px;
+}
+.col-md-66 {
+    flex: 0 0 66.7%;
+    padding: 0px 10px;
+}
+.col-md-75 {
+    flex: 0 0 75%;
+    padding: 0px 10px;
+}
+.col-md-80 {
+    flex: 0 0 80%;
+    padding: 0px 10px;
+}
+.col-md-90 {
+    flex: 0 0 90%;
+    padding: 0px 10px;
+}
+.col-md-100 {
+    flex: 0 0 100%;
+    padding: 0px 10px;
+}
+.registration-form .row .input-group input[type="text"], .registration-form .row .input-group input[type="date"],
+.registration-form .row .input-group input[type="password"], .registration-form .row .input-group input[type="mail"],
+.registration-form .row .input-group input[type="tel"], .registration-form .row .input-group select, .registration-form .row .input-group input[type="number"] {
+    background-color: #fff;
+    font-family: "Lato";
+    font-weight: 300;
+    max-width: 100%;
+    width: 100%;
+}
+form.registration-form label {
+    color: #616161;
+    font-family: "Lato";
+    font-weight: 600;
+}
+form.registration-form label.error {
+    color: #ff0000;
+    font-weight: 300;
+    font-size: 12px;
+}
+.registration-form .row .input-group input.error, .registration-form .row .input-group select.error {
+    border-color: #ff0000;
+}
+a.add_new_spouse.button.htb-btn-success, a.add_new_child.button.htb-btn-success {
+    background-color: #28a745;
+    border-color: #28a745;
+    margin-right: 0px;
+}
+a.add_new_spouse.button.htb-btn-success:hover, a.add_new_child.button.htb-btn-success:hover {
+    background-color: #218838;
+    border-color: #218838;
+}
+a.remove_spouse_row.button.htb-btn-danger, a.remove_child_row.button.htb-btn-danger {
+    background-color: #dc3545;
+    border-color: #dc3545;
+    margin-top: 25px;
+}
+a.remove_spouse_row.button.htb-btn-danger:hover, a.remove_child_row.button.htb-btn-danger:hover {
+    background-color: #c82333;
+    border-color: #bd2130;
+}
+.input-group.col-md-25.mb-10.w-50.pl-5.right-align {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    width: 25%;
+}
+.registration-form .row.family .input-group input[type="text"] {
+    margin-bottom: 10px;
+}
+.right-align {
+    text-align: right;
+}
+.with_family_details, .edit_family_details_option {
+    display: none;
+}
+.register-message {
+    color: #028402;
+    border: 1px solid #028402;
+    background-color: #e9fddd;
+    padding: 10px;
+}
+form#loginForm {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 1001;
+    background-color: #fff;
+    padding: 30px 30px 20px 30px;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    max-width: 90%;
+}
+.login_overlay {
+    background-color: rgba(0,0,0,0.7);
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    z-index: 999;
+}
+a.close {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    height: 40px;
+    width: 40px;
+}
+a.close span {
+    background-color: #0E652F;
+    height: 2px;
+    width: 30px;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 24px;
+    right: 10px;
+}
+a.close span::before {
+    content: "";
+    background-color: #0E652F;
+    height: 2px;
+    width: 30px;
+    transform: rotate(-90deg);
+    display: inline-block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+form#login input.error::placeholder {
+    color: #a40000;
+}
+form#login input.error {
+    border-color: #a40000;
+    color: #a40000;
+}
+form#login label.error {
+    display: none !important;
+}
+.register-message.login-status.error {
+    background-color: #ffd8d8;
+    color: #a40000;
+    border-color: #a40000;
+}
+
+
+/* Responsiveness
+=================================== */
+@media (max-width: 1320px) {
+    
+}
+@media (max-width: 979px) {
+    
+}
+@media (max-width: 767px) {
+    
+}
+@media (max-width: 450px) {
+    
+}
